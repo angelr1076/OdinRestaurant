@@ -1,0 +1,8 @@
+{
+  // comment
+  title: 'Turkey Leg',
+  item: {
+    name: 'Medieval Drumstick',
+    price: '12.99',
+  },
+}
