@@ -2,9 +2,10 @@ import './styles/style.css';
 
 export default function loadHome() {
   const element = document.createElement('div');
-  element.setAttribute('id', 'homepage');
+  element.setAttribute('id', 'home');
+  element.setAttribute('class', 'home-page');
 
-  element.textContent = '<h1>Home Page</h1>';
+  element.textContent = 'Home Page';
 
   return element;
 }

@@ -4,6 +4,7 @@
 :root {
   /* --poppins: 'Poppins', sans-serif; */
   --mont: "Montserrat", sans-serif;
+  --navbuttons: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
 }
 
 *,
@@ -25,17 +26,28 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem 5rem;
-  background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
+  background: var(--navbuttons);
 }
 
-.brand a {
+button {
+  cursor: pointer;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: var(--navbuttons);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  margin-left: 3rem;
+}
+
+.brand button {
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
+  background: var(--navbuttons);
 }
 
-ul {
+.navbar {
   display: flex;
   flex-direction: row;
 }
@@ -45,15 +57,7 @@ li {
   margin-left: 3rem;
 }
 
-li>a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-
-li::after {
+button::after {
   content: '';
   width: 0rem;
   height: 0.15rem;
@@ -64,10 +68,18 @@ li::after {
   transition: all 0.3s ease-in-out;
 }
 
-li:hover {
+button:hover {
   cursor: pointer;
 }
 
-li:hover::after {
+button:hover::after {
   width: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
 }

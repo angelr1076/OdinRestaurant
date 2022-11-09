@@ -2,41 +2,44 @@ import './styles/style.css';
 import loadHome from './home';
 
 export default function navBar() {
+  // Divs and navbar containers
   const header = document.createElement('header');
   const brandDiv = document.createElement('div');
-
   const navBarEl = document.createElement('nav');
 
-  const navList = document.createElement('ul');
-  const homeLi = document.createElement('li');
-  const menuLi = document.createElement('li');
-  const contactLi = document.createElement('li');
+  // Buttons
+  const homeBtn = document.createElement('button');
+  const menuBtn = document.createElement('button');
+  const contactBtn = document.createElement('button');
+  const brand = document.createElement('button');
 
-  const brandEl = document.createElement('a');
-  const homeNavEl = document.createElement('a');
-  const menuNavEl = document.createElement('a');
-  const contactNavEl = document.createElement('a');
+  // Button labels
+  brand.innerText = "Smokin' Meats | Brasserie";
+  homeBtn.innerText = 'Home';
+  menuBtn.innerText = 'Menu';
+  contactBtn.innerText = 'Contact';
 
-  // homeNavEl.href = loadHome();
-
+  // Add IDs and classes
+  homeBtn.setAttribute('id', 'homeButton');
+  menuBtn.setAttribute('id', 'menuButton');
+  contactBtn.setAttribute('id', 'contactButton');
+  homeBtn.setAttribute('class', 'btn');
+  menuBtn.setAttribute('class', 'btn');
+  contactBtn.setAttribute('class', 'btn');
+  header.setAttribute('class', 'header');
   brandDiv.setAttribute('class', 'brand');
   navBarEl.setAttribute('class', 'navbar');
 
-  brandEl.innerText = "Smokin' Meats | Brasserie";
-  homeNavEl.innerText = 'Home';
-  menuNavEl.innerText = 'Menu';
-  contactNavEl.innerText = 'Contact';
+  // Append to brand class container
+  brandDiv.appendChild(navBarEl);
+  brandDiv.appendChild(brand);
 
-  homeLi.appendChild(homeNavEl);
-  menuLi.appendChild(menuNavEl);
-  contactLi.appendChild(contactNavEl);
+  // Append to navbar container
+  navBarEl.appendChild(homeBtn);
+  navBarEl.appendChild(menuBtn);
+  navBarEl.appendChild(contactBtn);
 
-  brandDiv.appendChild(brandEl);
-  navList.appendChild(homeLi);
-  navList.appendChild(menuLi);
-  navList.appendChild(contactLi);
-  navBarEl.appendChild(navList);
-
+  // Append all to header container
   header.appendChild(brandDiv);
   header.appendChild(navBarEl);
 
