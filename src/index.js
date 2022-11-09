@@ -1,17 +1,13 @@
-import './style.css';
-import printMe from './print.js';
+import './styles/style.css';
+import navBar from './navbar';
 
 function component() {
+  // Create div with an ID of 'content'
   const element = document.createElement('div');
-  const btn = document.createElement('button');
+  element.setAttribute('id', 'content');
+  element.setAttribute('class', 'content');
 
-  element.innerHTML = `Item: ${json.item.name} & Price: ${json.item.price}`;
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
+  element.appendChild(navBar());
   return element;
 }
 
