@@ -1,5 +1,7 @@
 import './styles/style.css';
 import pageLoad from './pageLoad';
+import showElement from './showEl';
+import hideElement from './hideEl';
 
 function component() {
   // Create div with an ID of 'content'
@@ -16,18 +18,27 @@ document.body.appendChild(component());
 (function controlNavbar() {
   const btns = document.querySelectorAll('.btn');
 
-  btns.forEach((btn, idx) => {
-    let btnItem = { btn, idx };
-    let btnId = btnItem.btn.id;
+  btns.forEach(btn => {
+    let buttonEl = { btn };
+    let btnId = buttonEl.btn.id;
 
     btn.addEventListener('click', () => {
-      if (btnId === 'menuButton') {
-        const menuBtn = document.querySelector('#menu');
-        menuBtn.classList.remove('hidden');
+      const homeDiv = document.querySelector('#home');
+      const menuDiv = document.querySelector('#menu');
+      const contactDiv = document.querySelector('#contact');
+
+      if (btnId === 'homeButton') {
+        showElement(homeDiv);
+        hideElement(menuDiv);
+        hideElement(contactDiv);
+      } else if (btnId === 'menuButton') {
+        showElement(menuDiv);
+        hideElement(homeDiv);
+        hideElement(contactDiv);
       } else if (btnId === 'contactButton') {
-        const contactBtn = document.querySelector('#contact');
-        contactBtn.classList.remove('hidden');
-      } else {
+        showElement(contactDiv);
+        hideElement(homeDiv);
+        hideElement(menuDiv);
       }
     });
   });

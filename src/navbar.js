@@ -1,5 +1,4 @@
 import './styles/style.css';
-import loadHome from './home';
 
 export default function navBar() {
   // Divs and navbar containers
