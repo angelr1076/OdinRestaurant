@@ -1,7 +1,7 @@
 import './styles/style.css';
 import pageLoad from './pageLoad';
-import showElement from './showEl';
-import hideElement from './hideEl';
+import showElement from './z_showEl';
+import hideElement from './z_hideEl';
 
 function component() {
   // Create div with an ID of 'content'
