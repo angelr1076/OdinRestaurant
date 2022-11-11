@@ -7,7 +7,7 @@ export default function loadContact() {
   element.setAttribute('class', 'contact-page hidden');
 
   const container = document.createElement('div');
-  container.setAttribute('class', 'container');
+  container.setAttribute('class', 'contact-container');
 
   const colLeft = document.createElement('div');
   colLeft.setAttribute('class', 'col-left');
@@ -23,15 +23,15 @@ export default function loadContact() {
   colRight.appendChild(locImg);
 
   colLeft.innerHTML = `
-    <p>Phone:</p>
+    <p><u>Phone:</u></p>
     <p><strong>858.555.5555</strong></p>
     <br>
     <br>
-    <p>Address:</p> 
+    <p><u>Address:</u></p> 
     <p><strong>930 Mission Blvd.</strong></p>
     <p><strong>San Diego, CA 92109</strong></p>
     <br>
-    <p>Email:</p>
+    <p><u>Email:</u></p>
     <p><strong>brasmoke@beachlife</strong></p>
 
   `;
