@@ -7,7 +7,7 @@ function component() {
   // Create div with an ID of 'content'
   const element = document.createElement('div');
   element.setAttribute('id', 'content');
-  element.setAttribute('class', 'content');
+  element.setAttribute('class', 'content flex');
   element.appendChild(pageLoad());
 
   return element;

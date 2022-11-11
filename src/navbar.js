@@ -25,7 +25,7 @@ export default function navBar() {
   homeBtn.setAttribute('class', 'btn');
   menuBtn.setAttribute('class', 'btn');
   contactBtn.setAttribute('class', 'btn');
-  header.setAttribute('class', 'header');
+  header.setAttribute('class', 'header font-outline');
   brandDiv.setAttribute('class', 'brand');
   navBarEl.setAttribute('class', 'navbar');
 

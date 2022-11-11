@@ -1,8 +1,38 @@
 {
-  // comment
-  title: 'Turkey Leg',
-  item: {
+  menuItem: {
     name: 'Medieval Drumstick',
+    description: 'Our rendition of your favorite Renaissance faire turkey drumstick with a side of slaw.',
     price: '12.99',
+    img: 'https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/21974474/gallery_hero_4367938b-f040-4a0d-a19b-76396282a0a9.jpg',
+  },
+  menuItem2: {
+    name: 'Shrimp Po-Boy',
+    description: 'Fried Gulf Shrimp, Gambino’s French Bread, Lettuce, Tomato, Pickles, Two Bro’s Comeback',
+    price: '15.99',
+    img: 'https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/21974474/gallery_hero_4367938b-f040-4a0d-a19b-76396282a0a9.jpg',
+  },
+  menuItem3: {
+    name: 'Smoked Duck Sliders',
+    description: 'Smoked Maple Leaf Farms Duck Breast, pickled cabbage & Soy Sambal glaze all on three Sister Schubert rolls',
+    price: '15.99',
+    img: 'https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/21974474/gallery_hero_4367938b-f040-4a0d-a19b-76396282a0a9.jpg',
+  },
+  menuItem4: {
+    name: 'Smoke And Mirrors',
+    description: 'Our soon to be famous smoked brisket stacked on a Brioche bun, and topped with our tasty bacon jam and your choice of sauce.',
+    price: '15.99',
+    img: 'https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/21974474/gallery_hero_4367938b-f040-4a0d-a19b-76396282a0a9.jpg',
+  },
+  menuItem5: {
+    name: 'Smoked Cuban',
+    description: 'Slow smoked pork bbq, deli ham, Swiss cheese, pickles and mustard makes this a great Cuban.',
+    price: '12.99',
+    img: 'https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/21974474/gallery_hero_4367938b-f040-4a0d-a19b-76396282a0a9.jpg',
+  },
+  menuItem6: {
+    name: 'Southwest Tacos',
+    description: 'Smoked chicken breast, cumin crema, cheddar cheese, crispy totilla strips, smoked corn pico',
+    price: '12.99',
+    img: 'https://dtkp6g0samjql.cloudfront.net/uploads/photo/file/21974474/gallery_hero_4367938b-f040-4a0d-a19b-76396282a0a9.jpg',
   },
 }
