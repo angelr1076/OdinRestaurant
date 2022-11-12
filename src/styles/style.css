@@ -22,14 +22,6 @@ body {
   font-family: var(--mont);
 }
 
-.content {
-  background-image: url('../images/cutsIcon.svg');
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: 700px 700px;
-  background-position: 300px 200px;
-}
-
 .hamnav {
   width: 100%;
   background: var(--brickblue);
@@ -124,7 +116,6 @@ button:hover::after {
 
 .home-page p {
   line-height: 1.5;
-  font-weight: 600;
 }
 
 .home-title {
@@ -143,8 +134,10 @@ button:hover::after {
 }
 
 .hours-para {
-  width: 
-  400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
 }
 
 .flex-home {
@@ -229,11 +222,6 @@ button:hover::after {
 .col-left p {
   font-size: 1.2rem;
   color: #fff;
-}
-
-.col-left {
-  /* border-right: 1px solid #fff; */
-  /* padding-right: 1.5em; */
 }
 
 .col-right img {

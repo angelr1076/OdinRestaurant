@@ -19,21 +19,14 @@ export default function loadHome() {
   const hoursPara = document.createElement('p');
   hoursPara.setAttribute('class', 'hours-para brick-background');
   hoursPara.innerHTML = `
-    Restaurant hours
-    <br>
-    Monday: closed
-    <br>
-    Tuesday: 2pm - 8pm
-    <br>
-    Wednesday: 2pm - 8pm
-    <br>
-    Thursday: 2pm - 8pm
-    <br>
-    Friday: 2pm - 8pm
-    <br>
-    Saturday: 2pm - 8pm
-    <br>
-    Sunday: closed
+    <p><u>Restaurant hours</u></p>
+    <p>Monday: closed</p>
+    <p>Tuesday: 2pm - 8pm</p>
+    <p>Wednesday: 2pm - 8pm</p>
+    <p>Thursday: 2pm - 8pm</p>
+    <p>Friday: 2pm - 8pm</p>
+    <p>Saturday: 2pm - 8pm</p>
+    <p>Sunday: closed</p>
   `;
 
   element.appendChild(h1);
